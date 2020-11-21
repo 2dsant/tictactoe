@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link href="style-index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Press+Start+2P&display=swap"
+    rel="stylesheet"/>
+    <script type="text/javascript" src="javascript-index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Velha</h1>
+        <div class="container-btn">
+            <div class="row">
+                <button class="spot" id="b00" onclick="buttonClicked(0,0)">O</button>
+                <button class="spot" id="b01" onclick="buttonClicked(0,1)">X</button>
+                <button class="spot" id="b02" onclick="buttonClicked(0,2)">O</button>
+            </div>
+            <div class="row">
+                <button class="spot" id="b10" onclick="buttonClicked(1,0)">X</button>
+                <button class="spot" id="b11" onclick="buttonClicked(1,1)">O</button>
+                <button class="spot" id="b12" onclick="buttonClicked(1,2)">X</button>
+            </div>
+            <div class="row">
+                <button class="spot" id="b20" onclick="buttonClicked(2,0)">O</button>
+                <button class="spot" id="b21" onclick="buttonClicked(2,1)">X</button>
+                <button class="spot" id="b22" onclick="buttonClicked(2,2)">O</button>
+            </div>
+        </div>
+        <h2 id="message"></h2>
+        <h3 id="jogador">É a vez do jogador O</h3>
+        <button class="reset" onclick="startGame()" id="reset">Reiniciar</button>
+    </div>
+</body>
+<script type="text/javascript">
+    startGame();
+</script>
+</html>

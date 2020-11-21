@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: black;
+    text-align: center;
+}
+h1{
+    color: white;
+    margin: 30px;
+    font-family: "Press Start 2P", cursive;
+}
+H2{
+    color: white;
+    margin: 30px;
+    font-family: "Press Start 2P", cursive;
+}
+#jogador{
+    min-height: 30px;
+    color: orange;
+    margin: 30px;
+    font-family: "Press Start 2P", cursive;
+}
+#message{
+    min-height: 30px;
+    visibility: hidden;
+}
+.container-btn{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spot{
+    text-decoration: none;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: white;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    border-width: 5px;
+    background-color: black;
+    color: white;
+    font-size: 3em;
+    cursor: pointer;
+    box-shadow: 5px 4px 0px 0px rgb(107, 107, 107);
+    transition: box-shadow ease, transform ease;
+}
+.spot:active{
+    box-shadow: 0 0 0 0  rgb(107, 107, 107), inset 3px 3px 2px  rgb(107, 107, 107);
+    transform: translate(3px, 3px);
+}
+.spot:focus{
+    outline: none;
+}
+.reset{
+    font-family: "Press Start 2P", cursive;
+    text-decoration: none;
+    margin: 5px;
+    background-color: white;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 5px 4px 0px 0px rgb(107, 107, 107);
+    transition: box-shadow ease, transform ease;
+    padding: 15px;
+    visibility: hidden;
+}
+.reset:active{
+    box-shadow: 0 0 0 0  rgb(107, 107, 107), inset 3px 3px 2px  rgb(107, 107, 107);
+    transform: translate(3px, 3px);
+}
+.reset:focus{
+    outline: none;
+}
